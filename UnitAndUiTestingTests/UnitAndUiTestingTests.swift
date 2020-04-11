@@ -10,19 +10,20 @@ import XCTest
 @testable import UnitAndUiTesting
 
 class UnitAndUiTestingTests: XCTestCase {
-    var sut: ViewController!
+//    var sut: ViewController!
     
     override func setUpWithError() throws {
-        sut = ViewController()
-        super.setUp()
+//        sut = ViewController()
+//        super.setUp()
     }
 
     override func tearDownWithError() throws {
-        sut = nil
-        super.tearDown()
+//        sut = nil
+//        super.tearDown()
     }
     
     func testLoginCheckFunction() throws {
+        let sut = ViewController()
         XCTAssert(sut.validateLogin("name@email.com"), "Error in login validation")
 //        XCTAssert(sut.validateLogin("sadda.mail.sc"), "Error in login validation")
         XCTAssert(sut.validateLogin("HSNshanJ@yandex.ru"), "Error in login validation")
@@ -34,6 +35,7 @@ class UnitAndUiTestingTests: XCTestCase {
     }
     
     func testPasswordCheckFunction() throws {
+        let sut = ViewController()
 //        XCTAssert(sut.validatePassword("kskjbbsk"), "Error in password validation")
 //        XCTAssert(sut.validatePassword("Asd2!3va12"), "Error in password validation")
         XCTAssert(sut.validatePassword("ssk234Df"), "Error in password validation")
