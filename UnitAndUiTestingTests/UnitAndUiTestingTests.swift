@@ -12,15 +12,15 @@ import XCTest
 class UnitAndUiTestingTests: XCTestCase {
 //    var sut: ViewController!
     
-    override func setUpWithError() throws {
-//        sut = ViewController()
-//        super.setUp()
-    }
-
-    override func tearDownWithError() throws {
-//        sut = nil
-//        super.tearDown()
-    }
+//    override func setUpWithError() throws {
+////        sut = ViewController()
+////        super.setUp()
+//    }
+//
+//    override func tearDownWithError() throws {
+////        sut = nil
+////        super.tearDown()
+//    }
     
     func testLoginCheckFunction() throws {
         let sut = ViewController()
